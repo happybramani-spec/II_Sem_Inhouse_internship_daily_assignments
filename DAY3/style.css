@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    min-width: 150px;
+    height: 100px;
+    background: blue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
