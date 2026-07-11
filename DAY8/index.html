@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body id="body">
+    <form action="registration.php" method="post" class="form" enctype="multipart/form-data">
+        <h1>Registration form</h1>
+        <input type="file" name="profilepic" accept="image/*" />
+
+        <label for="txtName">Name:</label>
+        <input type="text" name="fullname" id="txtName" required placeholder="Enter your name" />
+<br>
+        <label for="txtEmail">Email:</label>
+        <input type="email" name="email" id="txtEmail" required placeholder="Enter your email" />
+<br>
+        <label for="txtPhone">Phone no:</label>
+        <input type="text" name="phonenumber" id="txtPhone" required placeholder="Enter your phone" />
+<br>
+        <p>Gender:</p>
+        <input type="radio" id="check-Male" name="gender" value="Male" checked />
+        <label for="check-Male">Male</label>
+    
+
+        <input type="radio" id="check-Female" name="gender" value="Female" />
+        <label for="check-Female">Female</label>
+        
+
+        <input type="radio" id="check-Transgender" name="gender" value="Transgender" />
+        <label for="check-Transgender">Transgender</label>
+
+        <input type="radio" id="check-Others" name="gender" value="Prefer not to say" />
+        <label for="check-Others">Prefer not to say</label>
+<br>
+        <label for="txtAddress">Address:</label>
+        <input type="text" name="address" id="txtAddress" placeholder="Enter your address" />
+<br>
+        <label for="dtDOB">DOB:</label>
+        <input type="date" id="dtDOB" name="dob" />
+<br>
+        <label for="pwdPassword">Password:</label>
+        <input type="password" id="pwdPassword" name="password" />
+<br>
+        <label for="pwdConfirmPassword">Confirm Password:</label>
+        <input type="password" id="pwdConfirmPassword" name="confirmPassword" />
+<br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="country">Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select>
+<br>
+        <label for="txtCity">City:</label>
+        <input type="text" name="city" id="txtCity" placeholder="Enter your city" />
+<br>
+        <label for="txtPostal">Postal code:</label>
+        <input type="text" name="postal" id="txtPostal" placeholder="Enter your postal code" />
+<br><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
